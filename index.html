@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="newGenerationMaker">
+            <span>Create a new generation
+                <div id="help">
+                    <button>?</button>
+                </div>
+            </span>
+            <input type="text" id="target" style="width: 200px" placeholder="Target string">
+            <div id="checkboxes">
+                <input type="checkbox" checked="true" value="abcdefghijklmnopqrstuvwxyz">Lowercase ENG letters</input>
+                <input type="checkbox" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">Uppercase ENG letters</input>
+                <input type="checkbox" checked="true" value=" ">Space</input>
+                <input type="checkbox" value="1234567890">Numbers</input>
+                <input type="checkbox" value="!@#$%^&*()_-+=[]|\/?.>,<;:'">Symbols</input>
+                <input type="checkbox" value="">Other letters..</input>
+            </div>    
+            <input type="text" id="otherLetters" placeholder="Other letters.."/>
+            <input type="number" id="pAmount" placeholder="Amount"/>
+            <input type="number" id="mutationRate" placeholder="MutationRate"/>
+            <button id="generationMakerButton">Start</button>
+        </div>
+        <div id="phrase">
+            <div id="current">
+                <span>Target phrase: "</span>
+                <span id="targetPhrase"></span>
+                <span>".</span>
+            </div>
+            <div id="best">
+                <span>Best phrase: "</span>
+                <span id="bestPhrase"></span>
+                <span>".</span>
+            </div>
+        </div>
+        <div id="data">
+            <div id="generation">
+                <span class="text">total generations: </span>
+                <span id="generationNumber">--</span>
+            </div>
+            <div id="populations">
+                <span class="text">total population: </span>
+                <span id="populationsAmount">--</span>
+            </div>
+            <div id="letters">
+                <span class="text">used letters: </span>
+                <span id="usedLetters">--</span>
+            </div>
+            <div id="fitness">
+                <span class="text">fitness average: </span>
+                <span id="fitnessAverage">--</span>
+            </div>
+            <div id="found">
+                <span class="text">status: </span>
+                <span id = "foundStatus">--</span>
+            </div>
+            <div id="mutation">
+                <span class="text">mutation rate: </span>
+                <span id="mutationRate">--</span>
+            </div>
+            <div id="frames">
+                <span class="text">frame rate: </span>
+                <span id="frameRate">--</span>
+            </div>
+        </div>
+        <div id="displayContainer">
+        
+        </div>
+    </div>
+
+</body>
+<script src="global.js"></script>
+<script src="Population.js"></script>
+<script src="sketch.js"></script>
+</html>
